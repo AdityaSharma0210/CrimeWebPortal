@@ -1,0 +1,128 @@
+
+
+               
+
+
+                
+                <!doctype html>
+                <html lang="en">
+                
+                <head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+                        integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+                    <title></title>
+                    <style>
+                        .container1 {
+                            margin-top: 60px;
+                            width: 65%;
+                        }
+                        .pd
+                        {
+                            margin-bottom:80px;
+                        }
+                    </style>
+                </head>
+                
+                <body>
+                
+                    <div class="container container1">
+                        <div>
+                            <center>
+                              <img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/police-badge.png" alt="police-badge"/>
+
+                                <a class="navbar-brand" href="#"><span style="font-size: 40px;">Crime Department</span></a>
+                            </center>
+                        </div>
+                        <hr style="border: 2px solid #0087bf;">
+                        <br>
+                        <%pyq.forEach(function(user){%>
+                        <h1><%= user.username%></h1>
+                        <h4><span class="badge text-bg-secondary"><%= user.email %></span></h4>
+                        <%})%>
+                        <p>
+                        <h6>We want to appreciate you for bravely revealing your identity while reporting the crime. Your integrity and
+                            courage are truly admirable.
+                            Looking forward to further cooperation.</h6>
+                        </p>
+                        <br>
+                        <div class="pd">
+                        <h3>REPORT AN INCIDENT</h3>
+                        <hr style="border: 1px solid #b32701;">
+                        <br>
+                            <h5 style="color: #0087bf">Report here if you witnessed a "Sure & Serious" Incident : </h5>
+                            <hr>
+                            <div class="mb-3">
+                              <form action="/send-mail" method="post">
+                                <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" name="subject" id="exampleFormControlInput1" placeholder="Name">
+                            
+                                <label for="exampleFormControlInput1" class="form-label">Email Id</label>
+                                <input type="email" name="to"  class="form-control" id="exampleFormControlInput1" placeholder="email">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                                <button type="submit" class="btn btn-outline-primary">Submit</button>
+                          </form>
+                           <br><br>
+                            
+                            <div class="mb-3">
+                                <h5 style="color: #0087bf">Report here for "Minor Disputes" : </h5>
+                                <hr>
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    Mobile Number
+                                </label>
+                                <form action="/message" method="post">
+                                <input type="number" class="form-control" name="mobnom" id="exampleFormControlInput1" placeholder="Mobile Number">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control" name="naming" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-outline-primary">Submit</button>
+                          </form>
+                        
+                            </div>
+                        </form>
+                        </div>
+                        <hr style="border: 3px solid grey;">
+                        <br>
+                        <div class="pd">
+                            <h3>Here are the reports you have submitted.</h3>
+                            <hr style="border: 1px solid #b32701;">
+                            <br>
+                            <div class="card" style="border: 1px solid black;">
+                                <div class="card-header" style="background-color: #333333; color:white;">
+                                    <h3>Report</h3>
+                                </div>
+                                <div class="card-body">
+                                  <%pyq.forEach(function(user){%>
+                                    <h4 class="card-title"><%= user.username%></h4>
+                                    <h6 class="card-title"><span class="badge text-bg-secondary"><%= user.email %></span></h6>
+                                    <%})%>
+                                    <br>
+                                    <%ryq.forEach(function(userdetail){%>
+                                    <p class="card-text"><b>MESSAGE</b>: <%= userdetail.naming %></p>
+                                    <%})%>
+                                    <br>
+                                    <b>STATUS:<span style="color: red;"> Under Investigation</span></b>
+                                    <br>
+                                    <br>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-secondary pd"><a href="/">Logout</a></button>
+                    </div>
+                    
+                
+                </body>
+                
+                </html>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                    crossorigin="anonymous"></script>
+
+<%- include("partials/footer")%>

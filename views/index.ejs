@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+  <title></title>
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .nav1 {
+      height: auto;
+      color: black;
+      font-size: 20px;
+      padding: 20px;
+    }
+
+    .div3l {
+      margin-top: 80px;
+      margin-left: 50px;
+      margin-bottom: 80px;
+    }
+
+    .div3r {
+      margin-top: 80px;
+      margin-left: 50px;
+      margin-bottom: 80px;
+      font-size: 20px;
+    }
+
+    hr {
+      border: 3px solid;
+    }
+
+    .responsive {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<a  href="https://icons8.com/icon/FOV96t3Jtuuj/police"></a> <a href="https://icons8.com"></a>
+<a  href="https://icons8.com/icon/14181/telephone"></a><a href="https://icons8.com"></a>
+<a  href="https://icons8.com/icon/16072/mail"></a>  <a href="https://icons8.com"></a>
+<a  href="https://icons8.com/icon/16153/clock"></a><a href="https://icons8.com"></a>
+<body>
+  <div class="container-fluid">
+    <div class="row" style="border-bottom: 2px solid rgb(174, 6, 6);">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary nav1">
+        <div class="container-fluid">
+          <img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/police-badge.png" alt="police-badge"/>
+          <a class="navbar-brand" href="#"><span style="font-size: 40px;">Crime Department</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-underline" style="margin-left: 100px;">
+              <li class="nav-item" style="margin-left:30px ;margin-top: 10px;">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item" style="margin-left:30px ;margin-top: 10px;">
+                <a class="nav-link" href="#section2">Services</a>
+              </li>
+              <li class="nav-item" style="margin-left:30px ;margin-top: 10px;">
+                <a class="nav-link" href="#section3">Contact Us</a>
+              <li class="nav-item" style="margin-left:30px ;margin-top: 10px;">
+                <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button"
+                  aria-controls="offcanvasRight">Login</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          src="https://images.unsplash.com/photo-1453873531674-2151bcd01707?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          style="margin-top:150px;margin-left: 10px;" class="responsive">
+      </div>
+      <div class="col-md-5" style="margin-left: 30px;">
+        <p style="font-size:50px;margin: 40px;">What we do.</p>
+        <hr>
+        <p style="font-size:15px;margin: 40px;">Our police department is committed to upholding the highest standards of
+          professionalism, fostering strong partnerships with the community, and ensuring public safety. We prioritize
+          the protection of life and property while also striving to enhance the overall quality of life for all
+          residents. Through proactive initiatives, such as community outreach programs and collaborative efforts with
+          local organizations, we aim to address not only criminal activity but also the underlying factors that
+          contribute to community well-being. We approach our interactions with residents with respect, dignity, and
+          empathy, recognizing the importance of building trust and maintaining positive relationships. By enforcing
+          laws fairly and impartially, we uphold the principles of justice and equality under the law. Our dedication to
+          integrity, excellence, and compassion guides everything we do as we serve and protect the residents of our
+          city.</p>
+        <br>
+        <hr>
+        <button style="font-size:20px ;margin: 40px;" type="button" class="btn btn-outline-danger"
+          data-bs-toggle="modal" data-bs-target="#md1">Request Callback</button>
+      </div>
+    </div>
+    <hr>
+    <div class="row" style="margin:40px;">
+      <div class="col-md-4 div3l">
+        <h1>How can we help?</h1>
+        <br><br>
+        <!--------------------------------------------------------------------------------------------------------------------------------->
+        <form action="/send-mail" method="post">
+          <div class="mb-3"><label for="exampleFormControlInput1" class="form-label">Full Name</label>
+            <input type="text" name="subject" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+          </div>
+          <div class="mb-3"><label for="exampleFormControlInput1" class="form-label">Email Id</label>
+            <input type="email" name="to" class="form-control" id="exampleFormControlInput1" placeholder="email">
+          </div>
+          <div class="mb-3"> <label for="exampleFormControlInput1" class="form-label">
+              Mobile Number
+            </label>
+            <input type="number" name="mobnom" class="form-control" id="exampleFormControlInput1"
+              placeholder="Mobile Number">
+          </div>
+          <div class="mb-3"><label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3">
+
+            </textarea>
+          </div>
+
+          <button type="submit" class="btn btn-outline-primary">Submit</button>
+        </form>
+      </div>
+      
+    <div class="col-md-6 div3r">
+      <h1>Tell us about what's happening in your area?</h1>
+      <hr style="border: 2px solid #0087bf;">
+      <br>
+      <p>
+        Get the latest crime statistics and advice, help us with appeals for information. We are glad to receive in
+        information from you about:
+      </p>
+      <ul>
+        <li>Crime</li>
+        <li> Missing person</li>
+        <li>Lost or found property</li>
+        <li>Road traffic incident</li>
+        <li>Fraud</li>
+        <li>Civil disputes</li>
+        <li>Lost or stolen vehicles</li>
+      </ul>
+      <br>
+      <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#md2">Register</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row" style="margin:80px;" id="section2">
+    <h1 style="margin-left:40px;">Our Department Services</h1><br>
+    <h4 style="margin-left:40px; color: grey;">We Have a Range of Sales-Boosting Marketing Services</h4>
+    <hr style="border: 2px solid #0087bf;">
+    <div class="col-md-5 div3l">
+      <img
+        src="https://template68189.motopreview.com/mt-demo/68100/68189/mt-content/uploads/2018/06/mt-1505-home-icon-1.png">
+      <br>
+      <h3>Crime Tips</h3>
+      <br>
+      <p>Police departments offer a vital "crime tips" service, empowering communities to contribute to public safety.
+        Through hotlines, online platforms, and community outreach programs, individuals can anonymously report
+        suspicious activities or provide valuable information to aid law enforcement. This collaborative effort
+        fosters trust, enhances communication, and plays a pivotal role in preventing and solving crimes.</p>
+      <br>
+      <img
+        src="https://template68189.motopreview.com/mt-demo/68100/68189/mt-content/uploads/2018/06/mt-1505-home-icon-3.png">
+      <br>
+      <h3>Finger Printing</h3>
+      <br>
+      <p>The police department offers fingerprinting services to aid in identification and criminal investigations.
+        Utilizing advanced technology and trained personnel, individuals can have their fingerprints accurately
+        recorded and processed. This service plays a crucial role in maintaining public safety and facilitating
+        justice within the community.</p>
+      <br>
+      <img
+        src="https://template68189.motopreview.com/mt-demo/68100/68189/mt-content/uploads/2018/06/mt-1505-home-icon-5.png">
+      <br>
+      <h3>Firearms Licensing</h3>
+      <br>
+      <p>The police department meticulously administers firearms licensing, ensuring rigorous scrutiny and adherence
+        to legal protocols. Through comprehensive background checks and thorough evaluations, they assess applicants'
+        suitability and responsibility for firearm ownership. By upholding stringent standards, the police department
+        prioritizes public safety while facilitating the lawful acquisition of firearms for eligible individuals.</p>
+      <br>
+    </div>
+    <div class="col-md-5 div3l">
+      <img
+        src="https://template68189.motopreview.com/mt-demo/68100/68189/mt-content/uploads/2018/06/mt-1505-home-icon-2.png">
+      <br>
+      <h3>Property Disposal</h3>
+      <br>
+      <p>The police department ensures proper disposal of seized property through a meticulous process. Items deemed
+        no longer needed for evidence or unclaimed by rightful owners are carefully cataloged and documented.
+        Utilizing transparent protocols, these items are then either auctioned, donated to charitable causes, or
+        disposed of responsibly, upholding the integrity of law enforcement operations.</p>
+      <br>
+      <img
+        src="https://template68189.motopreview.com/mt-demo/68100/68189/mt-content/uploads/2018/06/mt-1505-home-icon-4.png">
+      <br>
+      <h3>Vehicle Unlocks</h3>
+      <br>
+      <p>Police departments often offer a valuable service of vehicle unlocks, aiding individuals locked out of their
+        cars. Through a coordinated effort, officers utilize specialized tools and techniques to swiftly and safely
+        regain access to the vehicles, providing much-needed assistance to the community while upholding public safety
+        standards.</p>
+      <br>
+      <img
+        src="https://template68189.motopreview.com/mt-demo/68100/68189/mt-content/uploads/2018/06/mt-1505-home-icon-6.png">
+      <br>
+      <h3>Sex Offenders</h3>
+      <br>
+      <p>Police departments provide support services for sex offenders, aiming at rehabilitation and community
+        reintegration. Through specialized programs and counseling, they offer guidance and monitoring to prevent
+        recidivism, ensuring public safety while assisting offenders in their journey toward rehabilitation and
+        compliance with legal requirements. These services encompass various interventions tailored to individual
+        needs, fostering accountability and reducing the risk of further offenses.</p>
+      <br>
+    </div>
+  </div>
+  <div class="row" id="section3">
+    <div class="d-flex justify-content-center" style="background-color:#333333;color: white; padding-top: 40px;">
+      <div>          <img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/police-badge.png" alt="police-badge"/>
+      </div>
+      <a class="navbar-brand" href="#"><span style="font-size: 40px;">Crime Department</span></a>
+    </div>
+    <div class="d-flex justify-content-center" style="background-color:#333333;color: white;">
+      Committed to delivering the highest degree of professional police services in the city.
+    </div>
+    <br><br>
+    <div class="d-flex justify-content-center" style="background-color:#333333;color:#0087bf;padding-bottom: 40px;">
+      <ul style="list-style-type: none;">
+        <li><img width="32" height="32" src="https://img.icons8.com/windows/32/phone.png" alt="phone"/> (123-456-789)</li>
+        <li><img width="32" height="32" src="https://img.icons8.com/windows/32/secured-letter--v1.png" alt="secured-letter--v1"/> info@cityPolice.org</li>
+        <li><img width="32" height="32" src="https://img.icons8.com/windows/32/clock--v1.png" alt="clock--v1"/> Mon - Fri 08:00h - 17:00h</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal" tabindex="-1" id="md1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Request Callback</h5>
+          <button style="margin-left: 360px;" type="button" class="btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5>We can call you in 30 seconds, just enter your number below</h5>
+          <br>
+          <div class="mb-3">
+            <form action="/calling" method="post">
+              <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+              <input type="text" class="form-control" name="username" id="exampleFormControlInput1" placeholder="Name">
+              <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+              <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+              <label for="exampleFormControlInput1" class="form-label">
+                Mobile Number
+              </label>
+              <input type="number" class="form-control" name="mobnom" id="exampleFormControlInput1"
+                placeholder="Mobile Number">
+              <button type="submit" class="btn btn-outline-primary">Submit</button>
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1" id="md2">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact Us</h5>
+          <button style="margin-left: 360px;" type="button" class="btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5>
+            If you have any questions concerning our services, please fill out the contact form below.</h5>
+          <br>
+          <div class="mb-3">
+            <form action="/register" method="POST">
+              <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+              <input type="text" name="username" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email Id</label>
+            <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+              placeholder="email@mail.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleFormControlTextarea1" rows="3" name="password"
+              placeholder="********">
+            <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"> -->
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-outline-primary">Submit</button>
+            </div>
+            </form>
+            <!-- </textarea> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header" style="background-color: #59b2d7;padding: 21px;">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">
+        <div>          <img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/police-badge.png" alt="police-badge"/>
+          <a class="navbar-brand" href="#"><span style="font-size: 25px;">Crime
+              Department</span></a>
+      </h5>
+      <button style="padding-left: 300px;" type="button" class="btn-close" data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <h2>Login</h2>
+      <br>
+      <div class="mb-3">
+        <form action="/login" method="POST">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Username</label>
+            <input type="text" name="username" class="form-control" id="exampleFormControlInput1"
+              placeholder="Username">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" id="exampleFormControlInput1"
+              placeholder="********">
+          </div>
+
+          <button type="submit" class="btn btn-outline-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+      window.botpressWebChat.init({
+        "composerPlaceholder": "Chat with Agent Web",
+        "botId": "1eeacf09-c47d-4adb-a771-35fc0ca45ef3",
+        "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+        "messagingUrl": "https://messaging.botpress.cloud",
+        "clientId": "1eeacf09-c47d-4adb-a771-35fc0ca45ef3",
+        "webhookId": "9d6a831e-a8f0-41a2-8c5e-83a8c664d4c9",
+        "lazySocket": true,
+        "themeName": "prism",
+        "botName": "Agent Web",
+        "stylesheet": "https://webchat-styler-css.botpress.app/prod/8f5c393e-74be-4f24-b8d4-f885b408a9d5/v40939/style.css",
+        "frontendVersion": "v1",
+        "useSessionStorage": true,
+        "theme": "prism",
+        "themeColor": "#2563eb"
+      });
+    </script>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
